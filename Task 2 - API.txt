@@ -1,0 +1,83 @@
+- Selecting a specfic ad
+
+HTTP METHOD : GET
+URL 	    : http://myadvertiseapi.com/ad/{title}
+BODY        :
+{
+   "title":"xyz" ,
+   "text":"test text",
+   "image":"image1-url.jpg" ,
+   "sponseredBy":"5" ,
+   "trackingURL":"testTracking"
+}
+
+================================================
+- Selecting all ads of a specific campaign
+HTTP METHOD : GET
+URL 	    : http://myadvertiseapi.com/campaign/{trackingURL}
+BODY        :
+{
+{
+   "title":"xyz" ,
+   "text":"test text",
+   "image":"image1-url.jpg" ,
+   "sponseredBy":"5" ,
+   "trackingURL":"testTracking"
+},
+{
+   "title":"abc" ,
+   "text":"test2 text",
+   "image":"image2-url.jpg" ,
+   "sponseredBy":"5" ,
+   "trackingURL":"testTracking"
+}
+}
+
+================================================
+- Selecting all ads of a specific advertiser
+HTTP METHOD : GET
+URL 	    : http://myadvertiseapi.com/ads/{sponseredBy}
+BODY        :
+{
+{
+   "title":"xyz" ,
+   "text":"test text",
+   "image":"image1-url.jpg" ,
+   "sponseredBy":"5" ,
+   "trackingURL":"testTracking"
+},
+{
+   "title":"abc" ,
+   "text":"test2 text",
+   "image":"image2-url.jpg" ,
+   "sponseredBy":"5" ,
+   "trackingURL":"testTracking"
+}
+}
+
+================================================
+- Creating an ad
+HTTP METHOD : POST
+URL 	    : http://myadvertiseapi.com/createnew/ad
+BODY        :
+{
+   "title":"xyz" ,
+   "text":"test text",
+   "image":"image1-url.jpg" ,
+   "sponseredBy":"5" ,
+   "trackingURL":"testTracking"
+}
+
+================================================
+- Modifying an ad
+HTTP METHOD : PUT
+URL 	    : http://myadvertiseapi.com/update/{title}
+BODY        :
+{
+   "title":"xyz" ,
+   "text":"test text",
+   "image":"image1-url.jpg" ,
+   "sponseredBy":"5" ,
+   "trackingURL":"testTracking"
+}
+

@@ -1,0 +1,8 @@
+
+Query 1 :
+
+select title,text,image,sponseredBy,trackingUrl from campaigns where sponseredBy=100 and count(*) >50
+
+Query 2 :
+
+select title,text,image,sponseredBy,trackingUrl from campaigns where trackingUrl is null
